@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BSGarden</class>
+ <widget class="QMainWindow" name="BSGarden">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BSGarden</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QGraphicsView" name="gv">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="resizeAnchor">
+       <enum>QGraphicsView::AnchorViewCenter</enum>
+      </property>
+      <property name="viewportUpdateMode">
+       <enum>QGraphicsView::SmartViewportUpdate</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuActions">
+    <property name="title">
+     <string>Actions</string>
+    </property>
+    <addaction name="emplace"/>
+    <addaction name="emplace_random"/>
+    <addaction name="remove"/>
+    <addaction name="clear"/>
+   </widget>
+   <widget class="QMenu" name="menuSelect_Tree">
+    <property name="title">
+     <string>Select Tree</string>
+    </property>
+    <addaction name="bst"/>
+    <addaction name="avl"/>
+    <addaction name="red_black"/>
+    <addaction name="treap"/>
+    <addaction name="splay"/>
+   </widget>
+   <widget class="QMenu" name="menuScaling">
+    <property name="title">
+     <string>Scaling</string>
+    </property>
+    <addaction name="zoom_in"/>
+    <addaction name="zoom_out"/>
+   </widget>
+   <addaction name="menuSelect_Tree"/>
+   <addaction name="menuActions"/>
+   <addaction name="menuScaling"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="emplace">
+   <property name="text">
+    <string>Emplace value</string>
+   </property>
+  </action>
+  <action name="emplace_random">
+   <property name="text">
+    <string>Emaplce random values</string>
+   </property>
+  </action>
+  <action name="remove">
+   <property name="text">
+    <string>Delete selected</string>
+   </property>
+  </action>
+  <action name="clear">
+   <property name="text">
+    <string>Clear tree</string>
+   </property>
+  </action>
+  <action name="bst">
+   <property name="text">
+    <string>BST</string>
+   </property>
+  </action>
+  <action name="avl">
+   <property name="text">
+    <string>AVL</string>
+   </property>
+  </action>
+  <action name="zoom_in">
+   <property name="text">
+    <string>Zoom in</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+=</string>
+   </property>
+  </action>
+  <action name="zoom_out">
+   <property name="text">
+    <string>Zoom out</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+-</string>
+   </property>
+  </action>
+  <action name="red_black">
+   <property name="text">
+    <string>RedBlack</string>
+   </property>
+  </action>
+  <action name="treap">
+   <property name="text">
+    <string>Treap</string>
+   </property>
+  </action>
+  <action name="splay">
+   <property name="text">
+    <string>Splay</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
